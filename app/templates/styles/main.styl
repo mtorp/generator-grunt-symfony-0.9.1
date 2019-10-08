@@ -1,0 +1,32 @@
+<% if (useBootstrap) { %> @import "/bootstrap-stylus/bootstrap" <% } else if (useFoundation) { %>@import "/foundation/css/foundation.css";<% } else if (usePure) { %>@import "/pure/pure.css";
+@import "/suit-utils-layout/lib/layout.css";<% } else if (useUikit) { %>
+@import "/uikit/css/uikit.almost-flat.css";
+
+a {
+    transition: all 100ms ease-in-out;
+} <% } %>
+<% if (!useBootstrap && !useUikit) { %> @import "/sass-bootstrap-glyphicons/css/bootstrap-glyphicons.css"; <% } %>
+
+<% if (usePure) { %>
+.pure-g
+    padding: 15px 20px;
+
+.button-success
+    background: rgb(28, 184, 65);
+
+.hero
+    background: #eee;
+
+.container
+    max-width: 1024px;
+    margin: 0 auto;
+<% } %>
+<% if (!useUikit) { %>
+.header
+    height: 50px; <% } %>
+
+
+.yeoman-team
+    max-width: 90%;
+    display:block;
+    margin: 20px 0 50px;

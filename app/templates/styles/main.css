@@ -1,0 +1,28 @@
+<% if (usePure) { %>
+.pure-g {
+    padding: 15px 20px;
+}
+
+.button-success {
+    background: rgb(28, 184, 65);
+}
+
+.hero {
+    background: #eee;
+}
+
+.container {
+    max-width: 1024px;
+    margin: 0 auto;
+}<% } %>
+
+<% if (!useUikit) { %>
+.header {
+    height: 50px;
+}<% } %>
+
+.yeoman-team {
+    max-width: 90%;
+    display:block;
+    margin: 20px 0 50px;
+}

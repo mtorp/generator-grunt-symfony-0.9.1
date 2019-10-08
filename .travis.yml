@@ -1,0 +1,26 @@
+sudo: false
+language: node_js
+node_js:
+- stable
+- '0.12'
+addons:
+  apt:
+    packages:
+    - php5
+    - php5-curl
+    - php5-cli
+    - php5-intl
+    - rubygems
+
+before_install:
+- php --version
+- php -r "readfile('https://getcomposer.org/installer');" | php
+- travis_retry php composer.phar config --global github-oauth.github.com $COMPOSER_AUTH
+- travis_retry php composer.phar config --global --list
+- gem update --system
+- gem install sass --version "=3.3.7"
+- npm install -g bower grunt-cli jspm
+- jspm config registries.github.auth $JSPM_AUTH
+- currentfolder=${PWD##*/}
+- if [ "$currentfolder" != 'generator-grunt-symfony' ]; then cd .. && eval "mv $currentfolder generator-grunt-symfony" && cd generator-grunt-symfony; fi
+- npm install

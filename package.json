@@ -1,0 +1,66 @@
+{
+  "name": "generator-grunt-symfony",
+  "version": "0.9.1",
+  "description": "Yeoman generator to scaffold Symfony PHP apps with full featured frontend tooling incl. browsersync",
+  "license": "MIT",
+  "main": "app/index.js",
+  "repository": "bezoerb/generator-grunt-symfony",
+  "author": {
+    "name": "Ben Zörb",
+    "email": "",
+    "url": "https://github.com/bezoerb"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "files": [
+    "app"
+  ],
+  "keywords": [
+    "yeoman-generator",
+    "symfony",
+    "php",
+    "grunt",
+    "browsersync",
+    "jspm",
+    "requirejs",
+    "sass",
+    "less",
+    "stylus"
+  ],
+  "dependencies": {
+    "chalk": "1.1.1",
+    "fs-extra": "0.26.4",
+    "html-wiring": "1.2.0",
+    "inquirer": "0.11.1",
+    "js-yaml": "3.4.6",
+    "lodash": "3.10.1",
+    "string-length": "1.0.1",
+    "update-notifier": "0.6.0",
+    "yeoman-generator": "0.22.2",
+    "yo": "1.6.0",
+    "yosay": "1.1.0"
+  },
+  "devDependencies": {
+    "chai": "3.3.0",
+    "cross-spawn": "2.1.4",
+    "debug": "2.2.0",
+    "es6-promise": "3.0.2",
+    "glob": "6.0.3",
+    "grunt": "0.4.5",
+    "grunt-contrib-clean": "0.6.0",
+    "grunt-contrib-jshint": "0.11.3",
+    "grunt-exec": "0.4.6",
+    "grunt-simple-mocha": "0.4.1",
+    "indent-string": "2.1.0",
+    "jshint-stylish": "2.1.0",
+    "load-grunt-tasks": "3.4.0",
+    "mocha": "2.3.4",
+    "shelljs": "0.5.3",
+    "yeoman-assert": "2.1.0",
+    "yeoman-test": "1.0.0"
+  }
+}
